@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a href={% url 'home' %}>Start Again</a>
+
+    <h1>Your Text: </h1>
+
+    {{ fulltext }}
+    <br>
+    <br>
+    There are {{count}} words.
+    <br>
+    <br>
+
+    {% for w, c in worddictionary %}
+        {{w}} : {{c}}
+        <br>
+
+
+    {% endfor %}
+
+
+  </body>
+</html>
